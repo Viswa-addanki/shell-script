@@ -7,4 +7,6 @@
  * add files to temp area
  * commit changes
  * push the changes
+ * check one
  
+
