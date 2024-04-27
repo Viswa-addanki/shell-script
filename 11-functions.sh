@@ -2,8 +2,8 @@
 
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%m-%S)
-SCRIPTNAME= $ ($0 | cut -d "." -f1)
-LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.LOG
+SCRIPTNAME= $ (echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.LOG
 
 VALIDATE(){
 if [ $1 -ne 0 ]
